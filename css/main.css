@@ -120,9 +120,9 @@ select {
   text-transform: none;
 }
 button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+html input[type='button'],
+input[type='reset'],
+input[type='submit'] {
   -webkit-appearance: button;
   cursor: pointer;
 }
@@ -138,23 +138,23 @@ input::-moz-focus-inner {
 input {
   line-height: normal;
 }
-input[type="checkbox"],
-input[type="radio"] {
+input[type='checkbox'],
+input[type='radio'] {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
 }
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
   height: auto;
 }
-input[type="search"] {
+input[type='search'] {
   -webkit-appearance: textfield;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 fieldset {
@@ -194,7 +194,7 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
@@ -275,7 +275,7 @@ hr {
   overflow: visible;
   clip: auto;
 }
-[role="button"] {
+[role='button'] {
   cursor: pointer;
 }
 .container {
@@ -1044,7 +1044,7 @@ hr {
 .container:before,
 .row:after,
 .row:before {
-  content: " ";
+  content: ' ';
   display: table;
 }
 .clearfix:after,
@@ -1202,7 +1202,7 @@ blockquote:after,
 blockquote:before,
 q:after,
 q:before {
-  content: "";
+  content: '';
   content: none;
 }
 table {
@@ -1305,7 +1305,7 @@ img {
   background: url(../images/about-icon3-9ae.arb.png) no-repeat 32px 15px;
 }
 .about__info > ul > li:after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -1387,8 +1387,7 @@ img {
   background-color: none;
 }
 .header {
-  background: rgba(0, 0, 0, 0.8) url(../images/header-logo-b0e.arb.png)
-    no-repeat center 8px;
+  background: rgba(0, 0, 0, 0.8) url(../images/header-logo-b0e.arb.png) no-repeat center 8px;
   position: sticky;
   top: 0;
   left: 0;
@@ -1435,7 +1434,7 @@ img {
   position: relative;
 }
 .header__online p:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 3px;
   left: -16px;
@@ -1639,8 +1638,7 @@ img {
   margin-right: 0;
 }
 .chat__data-item__title {
-  background: #2b2e36 url(../images/arr-close-e10.arb.png.html) no-repeat 113px
-    22px;
+  background: #2b2e36 url(../images/arr-close-e10.arb.png.html) no-repeat 113px 22px;
   border: 1px solid #5d6169;
   border-radius: 5px;
   height: 50px;
@@ -1654,8 +1652,7 @@ img {
   color: #d3d8e0;
 }
 .chat__data-item__title.active {
-  background: #2b2e36 url(../images/arr-open-b48.arb.png.html) no-repeat 113px
-    22px;
+  background: #2b2e36 url(../images/arr-open-b48.arb.png.html) no-repeat 113px 22px;
 }
 .chat__data-item__choose {
   background: #2b2e36;
@@ -1862,8 +1859,7 @@ img {
   height: 50px;
   display: inline-block;
   vertical-align: top;
-  background: #2b2e36 url(../images/icon-name-385.arb.png.html) no-repeat 14px
-    15px;
+  background: #2b2e36 url(../images/icon-name-385.arb.png.html) no-repeat 14px 15px;
   border: 1px solid #5d6169;
   border-radius: 5px;
   text-indent: 38px;
@@ -1871,10 +1867,9 @@ img {
   color: #d3d8e0;
   margin: 0 0 0 20px;
 }
-.chat__form-content input[name="phone"] {
+.chat__form-content input[name='phone'] {
   margin: 20px 0 0;
-  background: #2b2e36 url(../images/icon-phone-e6f.arb.png.html) no-repeat 14px
-    15px;
+  background: #2b2e36 url(../images/icon-phone-e6f.arb.png.html) no-repeat 14px 15px;
 }
 .chat__form-content input:hover {
   border: 1px solid #54a22c;
@@ -2136,12 +2131,10 @@ img {
     width: 104px;
   }
   .chat__data-item__title {
-    background: #fff url(../images/arr-close-e10.arb.png.html) no-repeat 77px
-      22px;
+    background: #fff url(../images/arr-close-e10.arb.png.html) no-repeat 77px 22px;
   }
   .chat__data-item__title.active {
-    background: #fff url(../images/arr-open-b48.arb.png.html) no-repeat 77px
-      22px;
+    background: #fff url(../images/arr-open-b48.arb.png.html) no-repeat 77px 22px;
   }
   .day.chat__data-item__choose {
     left: -20px;
@@ -2186,10 +2179,9 @@ img {
     display: block;
     margin: 20px auto 0;
   }
-  .chat__form-content input[name="phone"] {
+  .chat__form-content input[name='phone'] {
     margin: 20px auto 0;
-    background: #2b2e36 url(../images/icon-phone-e6f.arb.png.html) no-repeat
-      14px 15px;
+    background: #2b2e36 url(../images/icon-phone-e6f.arb.png.html) no-repeat 14px 15px;
   }
   .chat__form-content button {
     width: 363px;
@@ -2326,12 +2318,10 @@ img {
     margin-right: 16px;
   }
   .chat__data-item__title {
-    background: #2b2e36 url(../images/arr-close-e10.arb.png.html) no-repeat 70px
-      22px;
+    background: #2b2e36 url(../images/arr-close-e10.arb.png.html) no-repeat 70px 22px;
   }
   .chat__data-item__title.active {
-    background: #2b2e36 url(../images/arr-open-b48.arb.png.html) no-repeat 70px
-      22px;
+    background: #2b2e36 url(../images/arr-open-b48.arb.png.html) no-repeat 70px 22px;
   }
   .day.chat__data-item__choose {
     left: -20px;
@@ -2690,12 +2680,8 @@ html.add-scroll {
   transition: 0.2s ease-in-out;
 }
 .shine-button:before {
-  content: "";
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.1),
-    rgba(255, 255, 255, 0.5)
-  );
+  content: '';
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5));
   height: 60px;
   width: 50px;
   position: absolute;
@@ -3024,7 +3010,7 @@ button {
   box-shadow: 0 4px 0 0 #b60116;
 }
 .link-button::before {
-  content: "Забрать выигрыш";
+  content: 'Забрать выигрыш';
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -3039,13 +3025,7 @@ button {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
   opacity: 0;
-  background: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    from(#f4102b),
-    to(#f64156)
-  );
+  background: -webkit-gradient(linear, left bottom, left top, from(#f4102b), to(#f64156));
   background: -webkit-linear-gradient(bottom, #f4102b 0, #f64156 100%);
   background: -o-linear-gradient(bottom, #f4102b 0, #f64156 100%);
   background: linear-gradient(0deg, #f4102b 0, #f64156 100%);
@@ -3058,7 +3038,7 @@ button {
   box-shadow: 0 4px 0 0 #b60116;
 }
 .link-button::after {
-  content: "";
+  content: '';
   position: absolute;
   left: -140px;
   top: -110px;
@@ -3106,14 +3086,14 @@ button {
   top: 310px;
   font-size: 20px;
   width: calc(100% - 60px);
-  font-family: "Gilroy Bold", arial;
+  font-family: 'Gilroy Bold', arial;
   font-size: 20px;
   cursor: pointer;
   background-image: -webkit-linear-gradient(90deg, #f64156 0, #f4102b 100%);
   background-image: -webkit-linear-gradient(90deg, #f64156 0, #f4102b 100%);
 }
 #main-link-5:before {
-  content: "Забрать выигрыш";
+  content: 'Забрать выигрыш';
   background-image: -webkit-linear-gradient(90deg, #f4102b 0, #f64156 100%);
   background-image: -ms-linear-gradient(90deg, #f4102b 0, #f64156 100%);
 }
@@ -3222,7 +3202,7 @@ input {
 }
 .title-my {
   text-align: center;
-  font-family: "PT Serif";
+  font-family: 'PT Serif';
   font-size: 24px;
   font-weight: 700;
   line-height: 1.3em;
@@ -3549,7 +3529,7 @@ button img {
   box-shadow: none;
 }
 .submit-roulette,
-input[value="Получить бесплатно"] {
+input[value='Получить бесплатно'] {
   text-transform: uppercase;
   padding: 10px 15px;
   margin: 15px 0;
@@ -3564,11 +3544,11 @@ input[value="Получить бесплатно"] {
   cursor: pointer;
   transition: background 0.3s;
 }
-input[value="Получить бесплатно"]:hover {
+input[value='Получить бесплатно']:hover {
   background: #b00 !important;
   transition: background 0.3s;
 }
-input[value="Получить бесплатно"]:active {
+input[value='Получить бесплатно']:active {
   transform: translateY(2px);
   box-shadow: none !important;
 }
@@ -3578,8 +3558,8 @@ input[value="Получить бесплатно"]:active {
   margin-bottom: 10px;
   width: auto !important;
 }
-input[placeholder="Ваш телефон"],
-input[placeholder="Ваше имя"] {
+input[placeholder='Ваш телефон'],
+input[placeholder='Ваше имя'] {
   padding-left: 5px;
   height: 42px;
   margin-bottom: 10px;
@@ -3665,26 +3645,11 @@ input[placeholder="Ваше имя"] {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  -webkit-box-shadow: #fff 0 -2px 0 inset, #fff 0 2px 0 inset,
-    rgba(0, 0, 0, 0.4) 0 0 5px;
-  box-shadow: #fff 0 -2px 0 inset, #fff 0 2px 0 inset,
-    rgba(0, 0, 0, 0.4) 0 0 5px;
+  -webkit-box-shadow: #fff 0 -2px 0 inset, #fff 0 2px 0 inset, rgba(0, 0, 0, 0.4) 0 0 5px;
+  box-shadow: #fff 0 -2px 0 inset, #fff 0 2px 0 inset, rgba(0, 0, 0, 0.4) 0 0 5px;
   background: #fff;
-  background: -webkit-gradient(
-    radial,
-    center center,
-    0,
-    center center,
-    100%,
-    color-stop(0, #fff),
-    color-stop(100%, #eaeaea)
-  );
-  background: -webkit-radial-gradient(
-    center,
-    ellipse cover,
-    #fff 0,
-    #eaeaea 100%
-  );
+  background: -webkit-gradient(radial, center center, 0, center center, 100%, color-stop(0, #fff), color-stop(100%, #eaeaea));
+  background: -webkit-radial-gradient(center, ellipse cover, #fff 0, #eaeaea 100%);
   background: -o-radial-gradient(center, ellipse cover, #fff 0, #eaeaea 100%);
   background: -webkit-radial-gradient(center, ellipse, #fff 0, #eaeaea 100%);
   background: -o-radial-gradient(center, ellipse, #fff 0, #eaeaea 100%);
@@ -3745,7 +3710,7 @@ input[placeholder="Ваше имя"] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Proxima Nova", Arial, "Helvetica Neue", sans-serif;
+  font-family: 'Proxima Nova', Arial, 'Helvetica Neue', sans-serif;
 }
 .time_remains {
   font-size: 1.1em;
@@ -3847,7 +3812,7 @@ input[placeholder="Ваше имя"] {
   animation: 0.7s ease 0s normal none 1 running pop-up-appear;
 }
 .pop-up-window::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 110px;
   height: 110px;
@@ -3860,7 +3825,7 @@ input[placeholder="Ваше имя"] {
   animation: 0.5s ease 0.6s normal backwards 1 running pop-up-appear-before;
 }
 .pop-up-window::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 50px;
   height: 20px;
@@ -3944,7 +3909,7 @@ input[placeholder="Ваше имя"] {
   width: 100%;
   max-width: 500px;
 }
-.chat-getnumber-item .form-group input[type="tel"] {
+.chat-getnumber-item .form-group input[type='tel'] {
   width: 100%;
   max-width: 500px;
   border: 2px solid #e4e4e4;
@@ -3957,10 +3922,10 @@ input[placeholder="Ваше имя"] {
   background: #fff;
   margin: 0 auto;
 }
-.chat-getnumber-item .form-group input[type="tel"].is-invalid {
+.chat-getnumber-item .form-group input[type='tel'].is-invalid {
   border: 1px solid #ff2330;
 }
-.chat-getnumber-item .form-group input[type="tel"].done {
+.chat-getnumber-item .form-group input[type='tel'].done {
   border: 1px solid #40c043;
 }
 .chat-getnumber-item .form-group i {
@@ -3990,8 +3955,7 @@ input[placeholder="Ваше имя"] {
   appearance: none;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
   border-radius: 10px;
-  background: url("../images/arrow_down.png") no-repeat right 10px center,
-    #b3a7a7;
+  background: url('../images/arrow_down.png') no-repeat right 10px center, #b3a7a7;
   background-size: 10px;
   padding: 7px 30px 7px 15px;
   min-height: 34px;
