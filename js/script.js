@@ -309,7 +309,11 @@ function scrollDown() {
   }
 }
 
-//-------------------------
+//----------------------form-----------------------
+
+window.addEventListener('beforeunload', function () {
+  localStorage.clear(); // Очищуємо локальне сховище перед перезавантаженням
+});
 
 document.addEventListener('DOMContentLoaded', function () {
   const phoneInput = document.getElementById('input-phone');
@@ -327,57 +331,65 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  form.addEventListener('submit', function (event) {
-    event.preventDefault();
+  let buttonSub = document.getElementById('submitBtn');
+
+  buttonSub.addEventListener('click', () => {
     const phoneNumber = phoneInput.value.trim();
     const phoneRegex = /^(\+38)0(39|50|63|66|67|68|73|89|9[1-9])[0-9]{7}$/;
-
+    event.preventDefault();
     if (!phoneRegex.test(phoneNumber)) {
       alert(
         'Некоректний номер телефону. \nПеревірте, чи починатися номер з +38, чи праильно введений код оператора і чи вірна кількість символів у вказаному номері (повинно бути 13 символів).'
       );
     }
+
+    // function sendUserResponse(response) {
+    //   fetch('/order/cpa/', {
+    //     method: 'POST',
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //     },
+    //     body: JSON.stringify({ response: response }),
+    //   })
+    //     .then(function (response) {
+    //       if (!response.ok) {
+    //         throw new Error('Помилка відправлення відповіді на сервер');
+    //       }
+    //       alert('данні передались на сервер');
+    //     })
+    //     .catch(function (error) {
+    //       console.error('Помилка відправлення відповіді на сервер:', error);
+    //     });
+    // }
+    else {
+      buttonSub.setAttribute('disabled', 'disabled');
+
+      const name = document.getElementById('input-name').value;
+      const phone = document.getElementById('input-phone').value;
+
+      let userGender = localStorage.getItem('userGender');
+      let userAge = localStorage.getItem('userAge');
+      let allergy = localStorage.getItem('allergy');
+
+      let userResponse = {
+        name: name,
+        phone: phone,
+        gender: userGender,
+        age: userAge,
+        allergy,
+      };
+
+      localStorage.setItem('userResponse', JSON.stringify(userResponse));
+
+      console.log(userResponse);
+
+      return true;
+    }
   });
 });
 
-function sendUserResponse(response) {
-  fetch('/order/cpa/', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({ response: response }),
-  })
-    .then(function (response) {
-      if (!response.ok) {
-        throw new Error('Помилка відправлення відповіді на сервер');
-      }
-      alert('данні передались на сервер');
-    })
-    .catch(function (error) {
-      console.error('Помилка відправлення відповіді на сервер:', error);
-    });
-}
+//----------------------go to buttom-----------------------
 
-function submitForm() {
-  const name = document.getElementById('input-name').value;
-  const phone = document.getElementById('input-phone').value;
+const goButtomBtn = document.getElementById('scroll_id');
 
-  let userGender = localStorage.getItem('userGender');
-  let userAge = localStorage.getItem('userAge');
-  let allergy = localStorage.getItem('allergy');
-
-  let userResponse = {
-    name: name,
-    phone: phone,
-    gender: userGender,
-    age: userAge,
-    allergy,
-  };
-
-  localStorage.setItem('userResponse', JSON.stringify(userResponse));
-
-  console.log(userResponse);
-
-  return false;
-}
+goButtomBtn.addEventListener('click', scrollDown);
