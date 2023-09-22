@@ -341,7 +341,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function sendUserResponse(response) {
-  fetch('/your-server-endpoint', {
+  fetch('/order/cpa/', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -379,5 +379,5 @@ function submitForm() {
 
   console.log(userResponse);
 
-  return true;
+  return false;
 }
