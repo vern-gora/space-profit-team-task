@@ -22,12 +22,6 @@ const massange = [
   },
 ];
 
-//-------------------------------------------
-
-showForm();
-
-//-------------------------------------------
-
 var mass_id = 0;
 var length_mass = 0;
 var lengt_num_mas = 0;
@@ -312,7 +306,7 @@ function scrollDown() {
 //----------------------form-----------------------
 
 window.addEventListener('beforeunload', function () {
-  localStorage.clear(); // Очищуємо локальне сховище перед перезавантаженням
+  localStorage.clear();
 });
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -341,27 +335,25 @@ document.addEventListener('DOMContentLoaded', function () {
       alert(
         'Некоректний номер телефону. \nПеревірте, чи починатися номер з +38, чи праильно введений код оператора і чи вірна кількість символів у вказаному номері (повинно бути 13 символів).'
       );
-    }
-
-    // function sendUserResponse(response) {
-    //   fetch('/order/cpa/', {
-    //     method: 'POST',
-    //     headers: {
-    //       'Content-Type': 'application/json',
-    //     },
-    //     body: JSON.stringify({ response: response }),
-    //   })
-    //     .then(function (response) {
-    //       if (!response.ok) {
-    //         throw new Error('Помилка відправлення відповіді на сервер');
-    //       }
-    //       alert('данні передались на сервер');
-    //     })
-    //     .catch(function (error) {
-    //       console.error('Помилка відправлення відповіді на сервер:', error);
-    //     });
-    // }
-    else {
+    } else {
+      // function sendUserResponse(response) {
+      //   fetch('/order/cpa/', {
+      //     method: 'POST',
+      //     headers: {
+      //       'Content-Type': 'application/json',
+      //     },
+      //     body: JSON.stringify({ response: response }),
+      //   })
+      //     .then(function (response) {
+      //       if (!response.ok) {
+      //         throw new Error('Помилка відправлення відповіді на сервер');
+      //       }
+      //       alert('данні передались на сервер');
+      //     })
+      //     .catch(function (error) {
+      //       console.error('Помилка відправлення відповіді на сервер:', error);
+      //     });
+      // }
       buttonSub.setAttribute('disabled', 'disabled');
 
       const name = document.getElementById('input-name').value;
@@ -381,8 +373,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       localStorage.setItem('userResponse', JSON.stringify(userResponse));
 
-      console.log(userResponse);
-
+      // sendUserResponse();
       return true;
     }
   });
@@ -393,3 +384,11 @@ document.addEventListener('DOMContentLoaded', function () {
 const goButtomBtn = document.getElementById('scroll_id');
 
 goButtomBtn.addEventListener('click', scrollDown);
+
+//----------------------reviews-----------------------
+
+const glowButton = document.querySelector('.glow-button');
+glowButton.addEventListener('click', () => {
+  document.querySelectorAll('.comment-item').forEach(x => x.classList.add('comment-item-show'));
+  document.querySelector('.glow-button').classList.add('invisible');
+});
