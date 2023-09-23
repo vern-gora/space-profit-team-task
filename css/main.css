@@ -3562,6 +3562,7 @@ input[disabled]:active {
 }
 input[disabled] {
   background: rgb(99, 14, 14);
+  box-shadow: none;
 }
 .input-roulette {
   padding-left: 5px;
